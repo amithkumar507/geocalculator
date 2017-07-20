@@ -15,6 +15,10 @@
 		582F0EF21CEE96A5009A17FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582F0EF01CEE96A5009A17FC /* LaunchScreen.storyboard */; };
 		582F0EFD1CEE96A5009A17FC /* GeocalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F0EFC1CEE96A5009A17FC /* GeocalculatorTests.swift */; };
 		582F0F081CEE96A5009A17FC /* GeocalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F0F071CEE96A5009A17FC /* GeocalculatorUITests.swift */; };
+		582F0F181CEE9E61009A17FC /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582F0F171CEE9E61009A17FC /* DecimalMinusTextField.swift */; };
+		58BE84721CF22FB0009CB986 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BE84711CF22FB0009CB986 /* CoreLocation.framework */; };
+		58BE84741CF22FBA009CB986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BE84731CF22FBA009CB986 /* Foundation.framework */; };
+		58BE84761CF233BD009CB986 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE84751CF233BD009CB986 /* CLLocationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		582F0F031CEE96A5009A17FC /* GeocalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582F0F071CEE96A5009A17FC /* GeocalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocalculatorUITests.swift; sourceTree = "<group>"; };
 		582F0F091CEE96A5009A17FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582F0F171CEE9E61009A17FC /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalMinusTextField.swift; path = "../../../../../Downloads/DecimalMinusTextField-master/DecimalMinusTextField.swift"; sourceTree = "<group>"; };
+		58BE84711CF22FB0009CB986 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		58BE84731CF22FBA009CB986 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58BE84751CF233BD009CB986 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLLocationExtensions.swift; path = "../../../../../Downloads/JRECLLocation-master/CLLocationExtensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BE84741CF22FBA009CB986 /* Foundation.framework in Frameworks */,
+				58BE84721CF22FB0009CB986 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,8 @@
 		582F0ED91CEE96A5009A17FC = {
 			isa = PBXGroup;
 			children = (
+				58BE84731CF22FBA009CB986 /* Foundation.framework */,
+				58BE84711CF22FB0009CB986 /* CoreLocation.framework */,
 				582F0EE41CEE96A5009A17FC /* Geocalculator */,
 				582F0EFB1CEE96A5009A17FC /* GeocalculatorTests */,
 				582F0F061CEE96A5009A17FC /* GeocalculatorUITests */,
@@ -99,8 +111,10 @@
 		582F0EE41CEE96A5009A17FC /* Geocalculator */ = {
 			isa = PBXGroup;
 			children = (
+				58BE84751CF233BD009CB986 /* CLLocationExtensions.swift */,
 				582F0EE51CEE96A5009A17FC /* AppDelegate.swift */,
 				582F0EE71CEE96A5009A17FC /* FirstViewController.swift */,
+				582F0F171CEE9E61009A17FC /* DecimalMinusTextField.swift */,
 				582F0EE91CEE96A5009A17FC /* SecondViewController.swift */,
 				582F0EEB1CEE96A5009A17FC /* Main.storyboard */,
 				582F0EEE1CEE96A5009A17FC /* Assets.xcassets */,
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BE84761CF233BD009CB986 /* CLLocationExtensions.swift in Sources */,
 				582F0EEA1CEE96A5009A17FC /* SecondViewController.swift in Sources */,
 				582F0EE61CEE96A5009A17FC /* AppDelegate.swift in Sources */,
+				582F0F181CEE9E61009A17FC /* DecimalMinusTextField.swift in Sources */,
 				582F0EE81CEE96A5009A17FC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +502,7 @@
 				582F0F0E1CEE96A5009A17FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		582F0F0F1CEE96A5009A17FC /* Build configuration list for PBXNativeTarget "GeocalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +511,7 @@
 				582F0F111CEE96A5009A17FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		582F0F121CEE96A5009A17FC /* Build configuration list for PBXNativeTarget "GeocalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +520,7 @@
 				582F0F141CEE96A5009A17FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
